@@ -1,0 +1,2 @@
+# Discord_QQ_Bridge
+同步Discord频道和qq群聊的消息
