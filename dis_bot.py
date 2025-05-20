@@ -34,7 +34,7 @@ async def on_message(message):
     if message.author.bot == True:
         return
 
-    print("-----------------------------------")
+    print("-"*20)
     # print(message)
     print(f"内容: {message.content}")
     # if message.content:

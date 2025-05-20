@@ -166,7 +166,7 @@ def to_qq():
     keyword = data.get('keyword',None)
     if qq_keyword and keyword != qq_keyword:
         return jsonify({'error': 'Invalid keyword'}), 400
-    if qq_to_ip is None:
+    if not qq_to_ip:
         qq_to_ip = qq_ip  # 默认值
     data = {
         'group_id': group_id,
@@ -188,4 +188,4 @@ def to_qq():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=6666)
+    app.run(host='0.0.0.0', port=to_port)
